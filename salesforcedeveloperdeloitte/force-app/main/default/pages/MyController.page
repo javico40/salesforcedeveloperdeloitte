@@ -1,0 +1,9 @@
+<apex:page controller="MyController" >
+    <apex:form >
+    	<apex:pageBlock title="Hola {!$User.FirstName}">
+            Usted esta visualizando la app {!name} de la cuenta {!account.name} <p/>
+            <apex:inputText value="{!account.name}" />
+            <apex:commandButton action="{!save}" value="Guardar" />
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
